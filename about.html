@@ -2,6 +2,15 @@
 <html>
 <head>
     <title>关于我</title>
+    <script>
+  // 自定义你的访问密码
+  const PASSWORD = "123456"; 
+  const userInput = prompt("请输入访问密码：");
+
+  if (userInput !== PASSWORD) {
+    document.body.innerHTML = "<h1 style='color:red;text-align:center;margin-top:100px;'>❌ 密码错误，无法访问</h1>";
+  }
+</script>
 </head>
 <body>
     <h1>关于我</h1>
